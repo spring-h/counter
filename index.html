@@ -1,0 +1,40 @@
+<!--
+ * @author: Spring
+ * @create: 2021-05-24 18:19 PM
+ * @license: MIT
+ * @lastAuthor: Spring
+ * @lastEditTime: 2021-05-26 10:13 AM
+ * @desc: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>计算器</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="box">
+      <input type="text" name="" id="" value="" v-model="result" />
+      <div class="box1 box2" @click="result=''">c</div>
+      <div class="box1" v-for="item in arr" @click=click(item)>{{item}}</div>
+    </div>
+    <div class="storage" v-if="historyArr.length>0">
+      <div>历史记录</div>
+      <div @click=clickStorage(item) v-for="item in historyArr">{{item}}</div>
+    </div>
+    <div class="storage" v-if="storageArr.length>0">
+      <div>记忆缓存</div>
+      <div @click=clickStorage(item) v-for="item in storageArr">{{item}}</div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="./index3.js"></script>
+</body>
+
+</html>

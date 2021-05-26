@@ -1,0 +1,50 @@
+.box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 5px;
+  width: 500px;
+  height: 420px;
+  background-color: bisque;
+  padding: 5px;
+}
+
+input {
+  grid-area: 1/1/2/5;
+}
+
+.box1 {
+  background-color: antiquewhite;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+.box1:hover{
+  background-color: #ddd;
+}
+.box1:active{
+  background-color: powderblue;
+}
+
+.box2 {
+  grid-area: 2/1/3/5;
+}
+.storage{
+  width: 500px;
+  border: 1px solid skyblue;
+  padding: 5px;
+  overflow-y: auto;
+  height: 420px;
+}
+.storage>div{
+  width: 100%;
+  background-color: pink;
+  text-align: center;
+  border: 1px solid papayawhip;
+  cursor: pointer;
+}
+#app{
+  display: flex;
+  justify-content: flex-start;
+}
