@@ -3,7 +3,7 @@
  * @create: 2021-05-26 09:01 AM
  * @license: MIT
  * @lastAuthor: Spring
- * @lastEditTime: 2021-05-26 13:07 PM
+ * @lastEditTime: 2021-05-26 13:58 PM
  * @desc: 
  */
 var app = new Vue({
@@ -20,9 +20,6 @@ var app = new Vue({
     resultArr:[],
     //符号数组
     symbolArr:[]
-  },
-  mounted() {
-    this.readStorage()
   },
   methods: {
     //TODO 操作缓存
@@ -177,5 +174,8 @@ var app = new Vue({
       this.result=item
     }
 
+  }, 
+  mounted() {
+    this.readStorage()
   },
 })
